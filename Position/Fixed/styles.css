@@ -1,0 +1,46 @@
+body {
+    background-color: #17181C;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    height: 200vh;
+}
+
+#posicao {
+    position: sticky;
+    background-color: blue;
+    height: 300px;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+}
+
+#posicao:hover .pulse {
+    bottom: 0;
+}
+
+.pulse {
+    background: inherit; /** herdou do pai que é o #posicao*/
+    color: #ff760c;
+    border: 2px solid;
+    padding: 15px 40px;
+    transition: 0.25s;
+}
+
+.pulse:hover, .pulse:focus {
+    color: #fff;
+    border-color: #ef8f6e;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    animation: pulsar 1s;
+}
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 5px #ef8f6e;
+    }
+}

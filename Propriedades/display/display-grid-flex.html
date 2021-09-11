@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .container{
+                margin-top: 30px;
+                max-width: 50vw;
+            }
+            h2 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: #ff760c;
+            }
+            .block {
+                display: block;
+            }
+            .inline{
+                display: inline;
+                width: 60px;
+            }
+            .inline-block {
+                display: inline-block;
+                /* aqui nao funciona o width */
+                width: 60px;
+            }
+            .contents {
+                display: contents;
+                /* nao pega back-ground color nem tamanho */
+                background-color: #333;
+            }
+            .flex{
+                display: flex;
+                flex-direction: column;
+            }
+            .inline-flex {
+                display: inline-flex;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(4, 70px);
+            }
+            .inline-grid{
+                display: inline-grid;
+                grid-template-columns: repeat(4, 70px);
+            }
+            .list-item{
+                display: list-item;
+            }
+        </style>
+</head>
+    <body>
+        <!-- display: table -->
+        <!-- display:table
+            display:linha
+            display: table-cell -->
+        <div class="container">
+            <h2>Display: list-item</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>email</th>
+                        <th>Idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joao</td>
+                        <td>joao@.com.br</td>
+                        <td>60</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>1 nome</td>
+                        <td>1 email</td>
+                        <td>60</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- list-item -->
+        <div class="container">
+            <h2>Display: list-item</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+
+            <div>
+                <span class="list-item" >Item A</span>
+                <span class="list-item" >Item B</span>
+                <span class="list-item" >Item C</span>
+            </div>
+
+        </div>
+
+
+        <!-- grid -->
+        <!-- comportamento de bloco um abaixo do outro -->
+        <div class="container">
+            <h2>Display: grid</h2>
+            <div class="grid">
+                <div>AC</div>
+                <div>Ce</div>
+                <div>%</div>
+                <div>/</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>x</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>0</div>
+                <div>.</div>
+                <div>,</div>
+                <div>=</div>
+            </div>
+            <div class="grid">
+                <div>AC</div>
+                <div>Ce</div>
+                <div>%</div>
+                <div>/</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>x</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>0</div>
+                <div>.</div>
+                <div>,</div>
+                <div>=</div>
+            </div>
+        </div>
+
+        <!-- inline grid -->
+        <!-- itens ficam ao lado -->
+        <div class="container">
+            <h2>Display: inline-grid</h2>
+            <div class="inline-grid">
+                <div>AC</div>
+                <div>Ce</div>
+                <div>%</div>
+                <div>/</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>x</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div> -</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>0</div>
+                <div>.</div>
+                <div>,</div>
+                <div>=</div>
+            </div>
+            <div class="inline-grid">
+                <div>AC</div>
+                <div>Ce</div>
+                <div>%</div>
+                <div>/</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>x</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div> -</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>0</div>
+                <div>.</div>
+                <div>,</div>
+                <div>=</div>
+            </div>
+        </div>
+        <!-- Display block -->
+        <div class="container">
+            <h2>Display: Block</h2>
+            <div class="block">Texto exemplo</div>
+            <span class="block" >Texto 2</span>
+            <span>Texto 3</span>
+            <span>Texto 4</span>
+            <!-- aqui ela fica ate o final da linha, do block fica dentro do container -->
+        </div>
+
+        <!-- display inline -->
+        <div class="container">
+            <h2>Display: inline</h2>
+            <div class="inline">Texto exemplo</div>
+            <span class="inline">Texto 2</span>
+            <span class="inline">Texto 3</span>
+            <span class="inline">Texto 4</span>
+            <span>Texto 5</span>
+            <span>Texto 6</span>
+        </div>
+        <div class="container">
+            <h2>Display: inline</h2>
+            <div class="inline">Texto exemplo</div>
+            <span class="inline">Texto 2</span>
+            <span class="inline">Texto 3</span>
+            <span>Texto 4</span>
+            <span>Texto 5</span>
+            <span>Texto 6</span>
+        </div>
+
+        <!-- inline-block -->
+        <div class="container">
+            <h2>Display: inline-block</h2>
+            <div class="inline-block">Texto exemplo</div>
+            <span class="inline-block">Texto 2</span>
+            <span class="inline-block">Texto 3</span>
+            <span>Texto 4</span>
+            <span>Texto 5</span>
+            <span>Texto 6</span>
+        </div>
+
+        <!-- contents -->
+        <div class="container">
+            <h2>Display: contents</h2>
+            <div class="contents">Texto exemplo</div>
+            <span class="contents">Texto 2</span>
+            <span class="contents">Texto 3</span>
+            <span>Texto 4</span>
+            <span>Texto 5</span>
+            <span>Texto 6</span>
+        </div>
+        <!-- flex -->
+        <div class="container">
+            <h2>Display: flex</h2>
+            <div class="flex" >
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+            </div>
+            <div class="flex" >
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+            </div>
+            <div class="flex">Texto exemplo</div>
+            <span class="flex">Texto 2</span>
+            <span class="flex">Texto 3</span>
+        </div>
+
+        <!-- inline-flex -->
+        <div class="container">
+            <h2>Display: inline-flex</h2>
+            <div class="inline-flex" >
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+            </div>
+            <div class="inline-flex" >
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+            </div>
+            <div class="inline-flex">Texto exemplo</div>
+            <span class="inline-flex">Texto 2</span>
+            <span class="inline-flex">Texto 3</span>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste</title>
+        <style>
+           body{
+               margin: 0;
+               padding: 0;
+               background-color: #ccc;
+               display: flex;
+               align-items: flex-start;
+               justify-content: flex-start;
+               height: 100vh;
+               width: 100vw;
+           }
+           body > div {
+               width: 100px;
+               height: 100px;
+               background-color: red;
+               border: solid 1px gray;
+               margin: 5px;
+           }
+
+           body:hover div:nth-child(5){
+                align-self: stretch;
+                height: inherit;
+           }
+
+           div:nth-child(1) {
+               position: relative;
+               top: 150px;
+               align-self: flex-start;
+           }
+           div:nth-child(2) {
+
+               align-self: center;
+           }
+           div:nth-child(3) {
+                position: relative;
+                top: 700px
+            }
+           div:nth-child(4) {
+               align-self: flex-end;
+           }
+        </style>
+</head>
+    <body>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </body>
+</html>

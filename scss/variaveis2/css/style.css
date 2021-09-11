@@ -1,0 +1,31 @@
+:root {
+  --laranja-hcode: #ff760c;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: blue;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--laranja-hcode);
+  height: 100px;
+  --laranja-hcode: red;
+}
+body header h1 {
+  margin: 0;
+}
+body header h2 {
+  background-color: #fff;
+  padding: 20px;
+  color: var(--laranja-hcode);
+}
+body section {
+  background-color: rgba(255, 118, 12, 0.3);
+  height: calc(100vh - 200px);
+}
+
+/*# sourceMappingURL=style.css.map */

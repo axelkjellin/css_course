@@ -1,0 +1,46 @@
+body {
+    background-color: #17181C;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    height: 200vh;
+}
+
+#posicao {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+#posicao:hover .pulse {
+    bottom: 100px;
+    left: 100px;
+}
+
+.pulse {
+    position: absolute;
+    background: none;
+    color: #ff760c;
+    border: 2px solid;
+    right: 0;
+    bottom: -100px;
+    padding: 15px 40px;
+    transition: 0.25s;
+}
+
+.pulse:hover, .pulse:focus {
+    color: #fff;
+    border-color: #ef8f6e;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+    animation: pulsar 1s;
+}
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 5px #ef8f6e;
+    }
+}

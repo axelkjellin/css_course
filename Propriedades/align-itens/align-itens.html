@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            .container-flex {
+                display: flex;
+                width: 100vh;
+                height: 30vh;
+                align-items: flex-start;
+                align-items: flex-end;
+                align-items: center;
+                align-items: stretch;
+                align-items: baseline;
+            }
+            .container-flex > div {
+                width: 100px;
+                /* height: 100px; */
+                background-color: red;
+                margin: 10px;
+            }
+            .container-grid {
+                display: grid;
+                width: 100vh;
+                height: 50vh;
+                background-color: yellow;
+                align-items: start;
+                align-items: center;
+                align-items: stretch;
+            }
+            .container-grid > div {
+                width: 100px;
+                /* height: 100px; */
+                background-color: green;
+                margin: 10px;
+            }
+        </style>
+</head>
+    <body>
+        <div class="container-flex">
+            <div style="font-size: 30px;">A</div>
+            <div style="font-size: 40px;">B</div>
+            <div style="font-size: 5px;">C</div>
+            <div style="font-size: 60px;">D</div>
+            <!-- <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div> -->
+        </div>
+        <div class="container-grid">
+            <div style="font-size: 30px;">A</div>
+            <div style="font-size: 40px;">B</div>
+            <div style="font-size: 15;">C</div>
+            <div style="font-size: 100px;">D</div>
+        </div>
+        
+
+    </body>
+</html>

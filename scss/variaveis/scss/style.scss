@@ -1,0 +1,23 @@
+$laranja-hcode: #ff760c;
+$laranja-hcode-transparente: rgba($laranja-hcode, .3);
+$background-color: blue;
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: $background-color;
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $laranja-hcode;
+        height: 100px;
+        h1 {
+            margin: 0;
+        }
+    }
+    section {
+        background-color: $laranja-hcode-transparente;
+        height: calc(100vh - 200px);
+    }
+}

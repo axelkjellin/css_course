@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste</title>
+        <style>
+            body{
+                margin: 0;
+                height: 100vh;
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                gap: 10px;
+            }
+            body > div {
+                border: #ccc 1px solid;
+                transition: all .2s ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            body > div:hover {
+                border-color: #fdcb6e;
+                font-weight: bold;
+            }
+            div.cursor-default {cursor: default;}
+            /* div.cursor-pointer {cursor: pointer;} */
+            div.cursor-alias {cursor: alias;}
+            div.cursor-all-scroll {cursor: all-scroll;}
+            div.cursor-pointer {cursor: pointer;}
+        </style>
+</head>
+    <body>
+        <div class="cursos-default">default</div>
+        <div class="cursos-alias">alias</div>
+        <div class="cursos-all-scroll">all-scroll</div>
+        <div class="cursos-pointer">pointer</div>
+        <div class="cursos-pointer">pointer</div>
+    </body>
+</html>

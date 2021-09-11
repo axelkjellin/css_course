@@ -1,0 +1,2 @@
+pra rodar o sass vai na pasta e bota esse comando
+sass scss:css --watchmappings":"","file":"style.css"}
