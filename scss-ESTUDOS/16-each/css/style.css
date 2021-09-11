@@ -1,0 +1,38 @@
+.xs {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px black;
+}
+
+.sm {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px black;
+}
+
+.md {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px black;
+}
+
+.lg {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+$sizes: ("xs": 50px, "sm": 100px, "md": 200px, "lg": 350px);
+
+@each $key, $value in $sizes{
+    .#{$key} {
+        width: $value;
+        height: $value;
+        border-radius: 50%;
+        // box-shadow: 3px 3px red, -1em 0 0.4em purple;
+        box-shadow: 0 0 30px rgb(0, 0, 0, 1);
+        // box-shadow: 0 0 0 15px rgb(250, 0, 250, 1);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
